@@ -1,9 +1,11 @@
 """"""""""""""""""""""""""""""""""
-"''     leowenyang 
-"''     2014-04-20
-"''     leowenyang@163.com
-"''     version 1.0
-"'''''''''''''''''''''''''''''''''
+""* @file vimrc
+""* @brief this profile for VIM
+""* @author leo, leowenyang@163.com
+""* @version 1.0
+""* @date 2014-08-03
+""""""""""""""""""""""""""""""""""
+
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
@@ -105,7 +107,9 @@ let Tlist_Use_Left_Window=1 " Taglist window position
 
 " doxygentoolkit
 let g:DoxygenToolkit_authorName="leo, leowenyang@163.com"
-let s:licenseTag="For free"
+let s:licenseTag="Copyright(C)\<enter>"
+let s:licenseTag=s:licenseTag."For free\<enter>"
+let s:licenseTag=s:licenseTag."All right reserved\<enter>"
 let g:DoxygenToolkit_licenseTag=s:licenseTag
 let g:DoxygenToolkit_briefTag_funcName="yes"
 let g:doxygen_enhanced_color=1
