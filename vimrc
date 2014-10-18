@@ -66,25 +66,6 @@ set ic
 "set foldcolumn=3
 
 
-" auto match () {} []  "" and ''
-:inoremap ( ()<ESC>i
-"":inoremap ) <c-r>=ClosePair(')')<CR>
-:inoremap { {<CR>}<ESC>O
-"":inoremap } <c-r>ClosePair('}')<CR>
-:inoremap [ []<ESC>i
-"":inoremap ] <c-r>=ClosePair(']')<CR>
-:inoremap " ""<ESC>i
-:inoremap ' ''<ESC>i
-
-function ClosePair(char)
-  if getline('.')[col('.')-1]==a:char
-    return "\<Right>"
-  else
-    return a:char
-  endif
-endfunction
-
-
 """""""""""""plugin"""""""""""""""""
 
 " pathogen plugin
@@ -113,6 +94,9 @@ let s:licenseTag=s:licenseTag."All right reserved\<enter>"
 let g:DoxygenToolkit_licenseTag=s:licenseTag
 let g:DoxygenToolkit_briefTag_funcName="yes"
 let g:doxygen_enhanced_color=1
+
+" vim indent guids
+let g:indent_guides_guide_size = 1
 
 "go"
 " Some Linux distributions set filetype in /etc/vimrc.
