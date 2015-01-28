@@ -6,10 +6,10 @@
 ""* @date 2014-08-03
 """"""""""""""""""""""""""""""""""
 
-set nocompatible
-source $VIMRUNTIME/vimrc_example.vim
-source $VIMRUNTIME/mswin.vim
-behave mswin
+"set nocompatible
+"source $VIMRUNTIME/vimrc_example.vim
+"source $VIMRUNTIME/mswin.vim
+"behave mswin
 
 " file encoding
 set fencs=utf-8,chinese,latin1
@@ -49,7 +49,7 @@ set nobackup
 set noswapfile
 
 " set list
-set listchars=tab:>- 
+set listchars=tab:>-,trail:$
 
 
 " auto adjust file
@@ -59,11 +59,16 @@ filetype indent on
 
 " set ignore case
 set ic
+set smartcase
 
 " set marker fold
 "set foldmethod=marker
 "set foldmarker====,===
 "set foldcolumn=3
+
+" search
+set hlsearch
+hi search term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
 
 
 """""""""""""plugin"""""""""""""""""
@@ -73,10 +78,10 @@ execute pathogen#infect()
 set laststatus=2
 
 "powerline{
-"set guifont=PowerlineSymbols for Powerline
+"set guifont=PowerlineSymbols\ for\ Powerline
 set nocompatible
 set t_Co=256
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'unicode'
 
 " NERDTree
 let NERDTreeWinPos='right'
