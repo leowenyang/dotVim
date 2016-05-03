@@ -27,10 +27,25 @@ snippet func
 	func ${1:functionName}(${2}) ${3}{
 		${4:/* code */}
 	}
+# Type Function
+snippet funct
+	func (${1:Type})${2:functionName}(${3}) ${4}{
+		${5:/* code */}
+	}
 # For Loop
 snippet for
 	for ${2:i} := 0; $2 < ${1:count}; $2${3:++} {
 		${4:/* code */}
+	}
+# For interface
+snippet interface
+	type ${1} interface {
+		${2}
+	}
+# For interface
+snippet struct 
+	type ${1} struct{
+		${2}
 	}
 # Header Include-Guard
 # (the randomizer code is taken directly from TextMate; it could probably be
