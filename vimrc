@@ -51,6 +51,9 @@ set noswapfile
 " set list
 set listchars=tab:>-,trail:$
 
+"set line end
+"set colorcolumn=81
+
 
 " auto adjust file
 syntax on
