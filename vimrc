@@ -94,6 +94,12 @@ let Tlist_Show_One_File=1 "only show current file tag
 let Tlist_Exit_OnlyWindow=1 "if last window is taglist, exit
 let Tlist_Use_Left_Window=1 " Taglist window position
 
+" Minibuf
+let g:miniBufExplMapWindowNavVim = 1 
+let g:miniBufExplMapWindowNavArrows = 1 
+let g:miniBufExplMapCTabSwitchBufs = 1 
+let g:miniBufExplModSelTarget = 1 
+
 " doxygentoolkit
 let g:DoxygenToolkit_authorName="leo, leowenyang@163.com"
 let s:licenseTag="Copyright(C)\<enter>"
